@@ -12,8 +12,6 @@ module Lambdabot.Config.Haskell
     , ghciBinary
     , hoogleBinary
     , muevalBinary
-
-    , maxPasteLength
     ) where
 
 import Lambdabot.Config
@@ -48,6 +46,4 @@ config "ghcBinary"          [t| String                  |] [| "ghc"         |]
 config "ghciBinary"         [t| String                  |] [| "ghci"        |]
 config "hoogleBinary"       [t| String                  |] [| "hoogle"      |]
 config "muevalBinary"       [t| String                  |] [| "mueval"      |]
-
-config "maxPasteLength"     [t| Int                     |] [| 4096 :: Int   |]
 
